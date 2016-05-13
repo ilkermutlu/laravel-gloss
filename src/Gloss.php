@@ -16,7 +16,7 @@ class Gloss {
         }
 
         if ($collection) {
-            $this->collection = $collection;
+            $this->collection = $collection->sort();
         }
         return $this;
     }
