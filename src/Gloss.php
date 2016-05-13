@@ -44,6 +44,7 @@ class Gloss {
             $groupedByFirstLetter[$firstCharacter][] = $record;
             return $groupedByFirstLetter;
         }, []);
+        ksort($reduced);
         return $reduced;
     }
 }
